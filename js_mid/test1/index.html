@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<head>
+		<title>JS Test 1</title>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript">
+			function init(){
+				makeObject();
+				sortAnArray();
+			}
+			
+			function makeObject(){
+				var dog = new petshop.Dog( "Fido" );
+				console.log( dog.speak() );
+			}
+			
+			function sortAnArray(){
+				var unsorted = [16,8,3,4,5,6,30,13,20];
+				console.log( sortArray( unsorted ) );
+			}
+		</script>
+	</head>
+	<body onload="init()">
+	
+	</body>
+</html>

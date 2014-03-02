@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<head>
+		<title>JS Test 2</title>
+		<link rel="stylesheet" href="css/site.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<ul class="tweets"></ul>
+		</div>
+
+		<script id="tweetTemplate" type="text/template">
+            <div class="tweet-inner">
+	            <div class="tweet-inner-header">
+	            	<a href='http://twitter.com/<%= user.screen_name %>' class="image"><img src='<%= user["profile_image_url"] %>' alt='<%= user["screen_name"] %>'/></a>
+	            	<a href='http://twitter.com/<%= user.screen_name %>' class="name"><span>@'<%= user.screen_name %>'</span></a>
+	            </div>
+	            <div class="tweet-inner-body">
+		            <p><%= text %></p>
+		            <p>Posted: <%= created_at %></p>
+	            </div>
+            </div>
+        </script>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/lib/underscore.js"></script>
+		<script src="js/lib/backbone.js"></script>
+
+		<script src="js/site.js"></script>
+	</body>
+</html>
